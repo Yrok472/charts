@@ -138,10 +138,10 @@ resources:
 configurationFilesPath: /etc/mysql/conf.d/
 
 # Custom mysql configuration files used to override default mysql settings
-configurationFiles: {}
-#  mysql.cnf: |-
-#    [mysqld]
-#    skip-name-resolve
+configurationFiles: 
+  mysql.cnf: |-
+    [mysqld]
+    sort_buffer_size=256000000
 #    ssl-ca=/ssl/ca.pem
 #    ssl-cert=/ssl/server-cert.pem
 #    ssl-key=/ssl/server-key.pem
